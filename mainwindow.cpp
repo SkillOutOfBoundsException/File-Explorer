@@ -53,6 +53,7 @@ void MainWindow::refresh()
 {
     extern FileSystem * fs;
     setSelected(fs->selected);
+    scene->clear();
     ui->graphicsView->viewport()->update();
     pintarFiles();
     ui->label->setText(selected->getRuta());
